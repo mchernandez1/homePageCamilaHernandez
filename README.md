@@ -20,7 +20,7 @@ https://github.com/mchernandez1/mchernandez1.github.io
 
 
 ### Screenshot
-[This is my personal web page](https://drive.google.com/open?id=1J4FjQNb65R1_n6wZRX6xZ7n7fKrokPhE)
+![This is my personal web page](src.JPG)
 
 ### MIT License
 This project is licensed under the MIT License - see the LICENSE.md file for details
