@@ -20,7 +20,7 @@ https://github.com/mchernandez1/mchernandez1.github.io
 
 
 ### Screenshot
-<img scr="scr.JPG">
+![Foto](scr.JPG)
 
 ### MIT License
 This project is licensed under the MIT License - see the LICENSE.md file for details
