@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>María Camila Hernández Moya</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+
+  <link href="CSS/hobbies.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-light " style="background-color: #FFE4C4;">
+    <img src="http://1.bp.blogspot.com/-JorfsgKLgJ4/UMU01f7QcvI/AAAAAAAAAME/tXQO0BlxG3k/s1600/Maria%2Bcamila.jpg" width="600" height="120" class="d-inline-block align-top" alt="" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html" id="menuUno">Sobre mí<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="hobbies.html">Intereses</a>
+        <a class="nav-item nav-link disabled" href="academico.html">Académico</a>
+      </div>
+    </div>
+  </nav><!--//.navBar-->
+  <br>
+  <br>
+  <br>
+
+  <h1>Actividades de interes</h1>
+  <br>
+  <p>Dentro de mis actividades favoritas se encuentra leer, nadar, cocinar, jugar fútbol y participar en voluntariados.</p>
+
+  <div class="actions">
+    <a href="#natacion">Nadar</a>
+    <a href="#">Leer</a>
+    <a href="#">Cocinar</a>
+    <a href="#">Jugar Fútbol</a>
+    <a href="#">Voluntariados</a>
+  </div>
+
+  <div id="gameboard">
+    <div class="card">
+      <img class="card-img-top" src="https://i.pinimg.com/originals/44/9c/73/449c73f46af550daa94e0a63e1ca78ce.png">
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="https://image.flaticon.com/icons/png/512/196/196363.png">
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="http://www.iconarchive.com/download/i97930/flat-icons.com/flat/Cake.ico">
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="http://stats.thepapare.com/wp-content/uploads/2018/05/football-icon-65993.png">
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="https://yt3.ggpht.com/a-/ACSszfG84bsDpFTAgD31r47I6Zwn5ukci5RClmJiew=s900-mo-c-c0xffffffff-rj-k-no">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2>Otros interes</h2>
+  <br>
+  <p>Dentro de las cosas que más me gustan se encuentra viajar, los girasoles, el campo, el café y mi color favorito es el rosado.</p>
+
+  <div class="actions">
+    <a id="uno" href="#">Viajar</a>
+    <a id="dos" href="#">Girasoles</a>
+    <a id="tres" href="#">Campo</a>
+    <a id="cuatro" href="#">Café</a>
+    <a id="cinco" href="#">Rosado</a>
+  </div>
+
+  <div id="gameboard">
+    <div class="card">
+      <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/I/41djqUvFpsL.png">
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="http://icons.iconarchive.com/icons/xaml-icon-studio/agriculture/256/Sunflower-icon.png">
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="https://static1.squarespace.com/static/59807c84f5e231e59a70e609/t/5b07be05f950b75f00ee5930/1527236029478/trees.png">
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="https://freeiconshop.com/wp-content/uploads/edd/coffee-takeaway-flat.png">
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="https://www.elvie.com/images/icon-gem.png">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <h2>Datos curiosos</h2>
+    <br>
+    <p>Durante el desarrollo de está pagína encontré estás dos funcionalidades que me parecieron divertidas. Están desarrolladas en Javascript, una indica la hora actual y la otra indica el número de veces que se ha ingresado a la página de manera local. Recuerde que sí ingresa por navegación privada no se actualizaría como se espera</p>
+<ul>
+    <script type="text/javascript" >
+      function startTime(){
+        today=new Date();
+        h=today.getHours();
+        m=today.getMinutes();
+        s=today.getSeconds();
+        m=checkTime(m);
+        s=checkTime(s);
+        document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+        t=setTimeout('startTime()',500);}
+        function checkTime(i)
+        {if (i<10) {i="0" + i;}return i;}
+        window.onload=function(){startTime();}
+      </script>
+      <li><div id="reloj" style="color:pink;font-size:16px;"></div></li>
+
+    <div id="cuentavisitas"></div>
+     <script style="align-content: center; text-align: center;">yu=function(id){return document.getElementById(id);}
+      if(localStorage){
+        if(localStorage['visitas']==undefined)
+        {
+          localStorage['visitas']=0;
+        }
+        var n=parseInt(localStorage['visitas']);localStorage['visitas']=1+n;
+        var num=localStorage['visitas'];
+
+        var mensaje="El número de veces que he reflescado mi página para lograr que luzca así son: " + num + " veces";
+
+        yu('cuentavisitas').innerHTML=mensaje;}
+      </script>
+
+    </div><!--//.containerJavaScript-->
+<br>
+<br>
+
+    <div class="share">
+      <a href="https://www.facebook.com/mariacamila.hernandez.58910">Facebook</a>
+      <a href="https://twitter.com/MaraCamilaHern3">Twitter</a>
+      <a href="https://www.instagram.com/maria_camila2/">Instagram</a>
+    </div><!--//.share-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+  </body>
+
+  </html>

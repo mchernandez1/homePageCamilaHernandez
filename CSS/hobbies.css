@@ -1,0 +1,173 @@
+body{
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+ul li{
+  color: pink;
+  text-align: center;
+}
+
+.navbar-brand{
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 18px 50px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+    color:#FFFFFF;
+}
+
+#imagenEncabezado{
+  width: 50px;
+  height: 50;
+  align-content: top;
+  display: inline-block;
+}
+
+
+
+.carousel-caption{
+      background-color:#FFFFFF;
+      color:#CC0000;
+      position:absolute;
+      text-align:center;
+      top:50px;
+      left:40px;
+      padding:65px;
+      font-size:50px;
+      font-weight:bold;
+      width:500px;
+}
+
+
+
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+     /* The image used */
+    background-image: url("http://i.ngenespanol.com/dam/tbg/traveler/lugares/17/10/12/santuario-de-monserrate-bogota.jpg.imgw.1280.1280.jpeg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 60;
+}
+
+.share a {
+  background: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+h1 {
+  color: #004E89;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  color: #E095D7;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  color: #333;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0 auto;
+  text-align:center;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.actions a {
+  background-color: #9DD1F1;
+  border-radius: 3px;
+  color: #004E89;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 10px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#uno, #dos, #tres, #cuatro, #cinco {
+  background-color: pink;
+  border-radius: 3px;
+  color: #E095D7;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 10px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#gameboard {
+  position: relative;
+  text-align: center;
+  top: 30px;
+}
+
+.card {
+  
+  border: 2px solid #9DD1F1;
+  display: inline-block;
+  height: 300px;
+  margin-top: 4px;
+  padding: 30px auto;
+  text-align: center;
+  width: 215px;
+}
+
+.card:hover {
+  background-color: #004E89;
+  border-color: #004E89;
+}
+
+.card img {
+  padding-top: 40px;
+}
+
+#natacion{
+  height: 200px;
+}

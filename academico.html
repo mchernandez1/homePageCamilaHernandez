@@ -1,0 +1,224 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>María Camila Hernández Moya</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+
+  <link href="CSS/academico.css" type="text/css" rel="stylesheet">
+
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-light " style="background-color: #FFE4C4;">
+    <img src="http://1.bp.blogspot.com/-JorfsgKLgJ4/UMU01f7QcvI/AAAAAAAAAME/tXQO0BlxG3k/s1600/Maria%2Bcamila.jpg" width="600" height="120" class="d-inline-block align-top" alt=""> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Sobre mí<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="hobbies.html">Intereses</a>
+        <a class="nav-item nav-link disabled" href="academico.html">Académico</a>
+      </div>
+    </div>
+  </nav><!--//.navBar-->
+
+  <br>
+  <br>
+  <br>
+
+  <h1>Formación académica</h1>
+  <br>
+  <div class=container>
+    <p>Actualmente me encuentro realizando mi pregrado en ingeniería de sistemas y computación en la Universidad de los Andes. Donde además adelanto mis estudios en ingeniería industrial, como segundo programa. Mis estudios de bachiller académico los curse en el Gimnasio Campestre los Sauces.</p>
+  </div>
+  
+  <div class="actions">
+    <a href="#">Gimnasio Nuevo Horizonte</a>
+    <a href="#mapaDos">Gimnasio Campestre los Sauces</a>
+    <a href="#mapaUno">Universidad de los Andes</a>
+  </div>
+  <br>
+  <br>
+
+  <!-- Map -->
+  <div class="container" id="mapaDos">
+    <div class="row">
+      <div class="col-md">
+        <div id="map_canvas" class="relative" style="height:400px;z-index: 2;"></div>
+
+        <!-- Maps Generator -->
+        <script>
+          window.onload = function() {
+            initialize();
+          }
+          function initialize() {
+            var adress = new google.maps.LatLng(4.783788,  -74.126106);
+          var myStyle = [ // https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapTypeStyleFeatureType
+          {
+            featureType: "administrative",
+            elementType: "labels",
+            stylers: [
+            { visibility: "on" }
+            ]
+          },{
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [
+            { visibility: "off" }
+            ]
+          },{
+            featureType: "water",
+            elementType: "labels",
+            stylers: [
+            { visibility: "on" }
+            ]
+          },{
+            featureType: "road",
+            elementType: "labels",
+            stylers: [
+            { visibility: "on" }
+            ]
+          },{
+            featureType: "transit",
+            elementType: "labels",
+            stylers: [
+            { visibility: "on" }
+            ]
+          }
+          ];
+
+          var myOptions = { // https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            zoom: 16,
+            center: adress,
+            disableDefaultUI: true,
+            navigationControl: false,
+            mapTypeControl: false,
+            streetViewControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false,
+            draggable: false,
+            clickable: false,
+            styles: myStyle
+          }
+          var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+          var infowindow = new google.maps.InfoWindow({
+            content: ""
+          });
+          // Marker adress
+          var marker = new google.maps.Marker({
+            position: adress,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            title: '',
+            icon: ''
+          });
+          // Place markers on the map
+          marker.setMap(map);
+          
+        }
+      </script>
+      <!-- End Map -->
+    </div><!--End col1-->
+
+  </div><!--End row-->
+</div><!--End container-->
+
+<br>
+<br>
+<br>
+<br>
+<h2>Proyectos</h2>
+<br>
+<div class="container">
+  <p>Durante mi trayectoria académica he estado trabajando en varios proyectos tanto con empresas como con comunidades vulnerables. Algunos de los proyectos que he llevado a cabo son: </p>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md">
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">Indumil</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Tejedoras de la memoria</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">One Burrito</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Banco de libros de ANDAR</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-5">Programación</a>
+
+      </div>
+    </div><!--End col1-->
+    <div class="col-md">
+      <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+        <h3 id="list-item-1">Indumil</h3>
+        <p id="pUno"> Debido a dificultades en el flujo de información entre las diferentes unidades de la organización se presentaban problemas de comunicación. Por lo tanto, se retrasaban procesos críticos para la organización. Por lo anterior, fue necesario actualizar los esquemas de estos procesos así se pudo identificar de manera clara los diversos cliente y proveedores de los procesos.
+        </p>
+        <br>
+        <h4 id="hUno">Habilidades adquiridas: Pensamiento sistémico, Diseño organizacional y Cultura organizacional
+        </h4>
+        <br>
+        <br>
+        <h3 id="list-item-2">Tejedoras de la memoria</h3>
+        <p id="pDos">En el curso Educación y memoria histórica estuve trabajando con el costurero de la memoria: kilómetros de vida y de memoria. Junto con mi grupo de trabajo desarrollamos una actividad de "Siluetas para la Paz" donde realizamos varias telas con el tema en común de como nuestros cuerpos también han sido transformados o tocados por la guerra y como vamos a empezar a construir paz teniendo en cuenta la educación como una herramienta primordial para esta nueva etapa. Estás telas fueron donadas al costurero de la memoria e hicieron parte del recubrimiento que se llevó a cabo por este colectivo al palacio de justicia en forma de protesta por todos los casos sin una sentencia que siguen en la impunidad.</p>
+        <br>
+        <h4 id="hDos">Habilidades adquiridas: Entender como los procesos y los productos de la memoria pueden ser educativos. Creación de procesos formativos a través de la construcción de memoria.
+        </h4>
+        <br>
+        <br>
+        <h3 id="list-item-3">One Burrito</h3>
+        <p id="pTres">Debido a los desperdicios y baja estandarización en algunos de los productos ofrecidos por el restaurante se desarrolló una herramienta para disminuir los desperdicios, es estandarizaron algunas recetas y tiempo de preparación. Además, se crearon dos herramientas para mejorar la ergonomía de los puestos de trabajo. Esto mejoro el ambiente laboral y genero medidas de fidelización con el personal de los restaurantes.
+        </p>
+        <br>
+        <h4 id="hTres">Habilidades adquiridas: Modelo de problemas utilizando optimización lineal, creación de estándares e indicadores de desempeño en organizaciones. 
+        </h4>
+        <br>
+        <br>
+        <h3 id="list-item-4">Banco de libros de ANDAR</h3>
+        <p id="pCuatro">Desarrollo de aplicación móvil para un control de las ventas de elementos como guantes y tapabocas para facilidad de los voluntarios del programa. Además, se estandarizaría la forma en que la información de estás ventas es almacenada en nuestra base de datos.</p>
+        <br>
+        <h4 id="hCuatro">Habilidades adquiridas: Desarrollo en Android y comunicación. 
+        </h4>
+        <br>
+        <br>
+        <h3 id="list-item-5">Programación</h3>
+        <p id="pCinco">Durante la trayectoria de mi pregrado he estado desarrollando habilidades para trabajar en grupos interdisciplinarios y multidisciplinarios donde he tenido la oportunidad de programar con diferentes lenguajes.
+        </p>
+        <br>
+        <h4 id="hCinco">Habilidades adquiridas: Desarrollo en lenguajes de programación como Java, Visual Basic, HTML, CSS, Bootstrap, Javascript y Mosel.
+        </h4>
+        <br>
+        <br>
+      </div>
+    </div><!--End col2-->
+  </div><!--End row-->
+</div><!--End container-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="share">
+  <a href="https://www.facebook.com/mariacamila.hernandez.58910">Facebook</a>
+  <a href="https://twitter.com/MaraCamilaHern3">Twitter</a>
+  <a href="https://www.instagram.com/maria_camila2/">Instagram</a>
+</div><!--//.share-->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+
+</body>
+
+</html>
