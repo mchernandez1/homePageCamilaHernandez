@@ -15,7 +15,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light " style="background-color: #FFE4C4;">
+    <!-- David Guarin: Creo que es mejor agregar navbar-expand-md despues de [class = "navbar] para que solo aparezca el icono de despliegue
+        cuando se encoja la pagina web. Pues lo mismo en los demas html-->
+    
+    <nav class="navbar navbar-expand-md navbar-light " style="background-color: #FFE4C4;">
         <img src="http://1.bp.blogspot.com/-JorfsgKLgJ4/UMU01f7QcvI/AAAAAAAAAME/tXQO0BlxG3k/s1600/Maria%2Bcamila.jpg" width="600" height="120" class="d-inline-block align-top" alt="" >
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -65,7 +68,8 @@
       <span class="byline">Estudiante de ingeniería de sistemas y computación</span>
       <br>
       <span class="byline">Estudiante de ingeniería industrial</span>
-      <div class="row">
+        <!--David Guarin: Aqui en clase row agregar un id como ajustar esto es para modificar esto en el css-->
+      <div class="row" id = "ajustar"> 
         <div class="col-md">
            <img class="d-block w-100" src="https://scontent.fbog5-1.fna.fbcdn.net/v/t1.0-9/39522241_1905651999729705_6958870265413500928_n.jpg?_nc_cat=0&oh=7a1971afe30e57896e18013e92e371e7&oe=5C31D6AB" >
        </div><!--//.col 1-->
@@ -77,13 +81,17 @@
       <h2>"Creo que los conocimientos tienen valor cúando con ellos puedes ayudar a otros"</h2>
   </div><!--//.pull quote-->
 </div><!--//.container-->
+<!--//.share-->
+</div><!--//.sobreMi-->
+    <!--David Guarin: Me parece mejor mover la clase share afuera del SobreMi para que no sea afectado por su limite de tamano-->
   <div class="share">
     <a href="https://www.facebook.com/mariacamila.hernandez.58910">Facebook</a>
     <a href="https://twitter.com/MaraCamilaHern3">Twitter</a>
     <a href="https://www.instagram.com/maria_camila2/">Instagram</a>
-</div><!--//.share-->
-</div><!--//.sobreMi-->
-
+</div>
+    
+    
+    
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
