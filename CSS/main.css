@@ -30,9 +30,14 @@ ul li{
   margin: 0 auto;
   padding: 40px;
   text-align: center;
-  width: 600px;
-  height: 600px;
-  overflow: visible;
+  /** David Guarin: Borrar width height overflow: para que el footer no quede enzima cuando se encoja la pagina y no haya un limitante**/
+}
+/** crear para cambiar el id de ajustar de esta manera la imagen y el texto quedan del mismo tamaño que antes**/
+#ajustar{
+  max-width:50%;
+  max-height:50%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 #intereses{
